@@ -8,11 +8,6 @@ public class UserDto {
 	private int age;
 	private double salary;
 	private String serviceType;
-
-	public UserDto() {
-
-	}
-
 	public String getServiceType() {
 		return serviceType;
 	}

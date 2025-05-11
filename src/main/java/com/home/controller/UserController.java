@@ -28,6 +28,6 @@ public interface UserController {
 	public String updateUser(@RequestBody UserEntity user,@PathVariable("id") int id);
 
 	@PostMapping(value = "/save")
-	public ResponseEntity<?> saveUser(@RequestBody UserDto user);
+	public String saveUser(@RequestBody UserDto user);
 
 }

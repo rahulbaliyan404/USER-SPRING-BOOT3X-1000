@@ -55,7 +55,8 @@ public class UserControllerImpl implements UserController {
 	}
 	
 	@Override
-	public ResponseEntity<?> saveUser(@RequestBody UserDto user) {
-		return ResponseEntity.ok(userLogic.saveUser(user));
+	public String saveUser(@RequestBody UserDto user) {
+		userLogic.saveUser(user);
+		return "User Created Successfully";
 	}
 }
