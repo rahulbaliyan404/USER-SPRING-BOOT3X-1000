@@ -1,4 +1,4 @@
-package com.home.logic;
+package com.home.dao;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,13 +6,13 @@ import java.util.Optional;
 import com.home.dto.UserDto;
 import com.home.entity.UserEntity;
 
-public interface UserLogic {
+public interface UserDao {
+
+	List<UserEntity> getMySqlUsers();
 
 	Optional<UserEntity> getUserById(int id);
 
-	List<UserEntity> getUsers();
-
-	 UserEntity saveUser(UserDto user);
+	UserEntity saveUser(UserDto user);
 
 	String deleteUser(int id);
 
