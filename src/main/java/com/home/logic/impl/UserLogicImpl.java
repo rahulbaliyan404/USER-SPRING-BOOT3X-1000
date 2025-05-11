@@ -32,14 +32,6 @@ public class UserLogicImpl implements UserLogic {
 		LOGGER.info("UserLogicImpl getUsers method :: START");
 
 		List<UserEntity> mysqlUserList = userDao.getMySqlUsers();
-		/*
-		 * List<PgSqlUser> pgSqlUserList = userDao.getPgSqlUsers();
-		 * 
-		 * for (PgSqlUser pgSqlUserData : pgSqlUserList) {
-		 * System.out.println(pgSqlUserData.getName());
-		 * System.out.println(pgSqlUserData.getPassword());
-		 * System.out.println(pgSqlUserData.getEmail()); }
-		 */
 		return mysqlUserList;
 
 	}

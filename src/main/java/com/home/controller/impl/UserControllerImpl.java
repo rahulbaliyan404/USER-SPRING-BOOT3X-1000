@@ -51,17 +51,11 @@ public class UserControllerImpl implements UserController {
 
 	@Override
 	public String updateUser(UserEntity user,int id) {
-		
-		System.out.println(user.getId());
-		System.out.println(user.getUsername());
-		System.out.println(id);
-		
-		return null;
+		return "Data";
 	}
 	
 	@Override
 	public ResponseEntity<?> saveUser(@RequestBody UserDto user) {
 		return ResponseEntity.ok(userLogic.saveUser(user));
 	}
-
 }
